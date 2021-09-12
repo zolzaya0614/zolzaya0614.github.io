@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SONUR</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            max-height: 100vh;
+            margin: 0;
+            display: flex;  
+        }
+        .name{
+            width: 70%;
+            height: 100vh;
+            background-image: url(./taniltsuulaga.jpg);
+            background-size: cover;
+        }
+        .content{
+            width: 30%;
+            height: 700px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .login{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .login input{
+            width: 100%;
+            height: 40px;
+            padding-left: 20px;
+            padding-right: 30px;
+            border: 2px solid #646363;
+            border-radius: 10px;
+            transition:border-color  1s linear;
+            box-shadow: 2px 2px 5px #968888;
+            margin: 8px 0;
+            cursor: pointer;
+        }
+        .login input:focus{
+            border-color: rgb(250, 144, 144);
+            outline: none;
+        }
+        .login button{
+            width: 100%;
+            height: 40px;
+            margin: 8px 0;
+            background-color:#f53b57;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 5px 5px 8px #dddddd;
+            border-color: #f53b57;
+            cursor: pointer;
+        }
+        .login button:hover{
+            box-shadow: 0 14px 26px -12px rgba(245,59,87,.42),0 4px 23px 0 rgba(0,0,0,.12),0 8px 10px -5px rgba(245,59,87,.2)!important;
+            opacity: .8;
+
+        }
+        .login img{
+            width: 100px;
+            height: 210px;
+            border-radius: 110px;
+            margin: 90px 170px;
+            position: relative;
+        }
+        .right{
+            float: right;
+        }
+        .section a{
+            color: rgb(8, 8, 8);
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .section a:hover{
+            color: #f53b57;
+            transition: 0.5s;
+        }
+        .border1{
+            cursor: pointer;
+            border: 3px solid black;
+            transform: rotate(90deg);
+            width: 220px;
+            height: 120px;
+            border-radius: 120px;
+            position: absolute;
+            top: 190px;
+            left: 175px;
+            border-bottom: white;
+            border-left: white;
+        }
+        .border2{
+            cursor: pointer;
+            border: 3px solid black;
+            transform: rotate(90deg);
+            width: 240px;
+            height: 140px;
+            border-radius: 140px;
+            position: absolute;
+            top: 180px;
+            left: 165px;
+            border-top: white;
+            border-right: white;
+            animation: border 1s infinite;
+        }
+        @media (max-width:600px) {
+            .content{
+                width: 95%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                margin: 0 auto;
+            }
+            .login{
+               width:calc(100% - 20px);
+            }
+            .border1{
+                position: absolute;
+                top: 190px;
+                left: 133px;
+            }
+            .border2{
+                position: absolute;
+                top: 180px;
+                left: 123px;
+            }
+            .name{
+                width: 0;
+                height: 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div>
+            <div class="out border1"></div>
+            <div class=" out border2"></div>
+        </div>
+        <div class="login">
+            <a href="./web.html"> <img src="./sonur.PNG" alt="sonur"> </a>
+            <input placeholder="Утасны дугаар" type=" phone ">
+            <input placeholder=" Нууц үг" type=" password ">
+            <button> <p> Нэвтрэх</p></button>
+            <div class="section">
+                <a href="#"> Нууц үгээ мартсан?</a>
+                <a class="right" href="#"> Бүртгүүлэх</a>
+            </div>
+        </div>
+    </div>
+    <div class="name"></div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

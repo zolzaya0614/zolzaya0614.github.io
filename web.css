@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Pacifico', cursive;   
+}  
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./09743776edfe6e77eadb198865ce3cc97899ecc5.jpg);
+    background-size: cover;
+    position: relative;
+}
+div::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    min-width: 100%;
+    background-color: rgba(0,0,0,0.3);
+    z-index: -1; 
+}
+.menu{
+    width:100%;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.icon{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.icon a{
+    color: white;
+    margin: 10px;
+}
+.nbar{
+    width: calc(40% - 10px);
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0;
+
+}
+ul{
+    width: calc(100% - 10px);
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    gap: 10px;
+}
+li{ 
+    width: calc(45% - 10px);
+    height: 100px;
+    font-size: 30px;
+    color: rgb(250, 244, 166);
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 10px 8px #2b2a2a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.login1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.menu button{
+    width: calc(40% - 40px);
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 5px #2b2a2a;
+    padding: 0;
+}
+.menu button:hover{
+    background-color: rgba(226, 21, 21, 0.3);
+}
+li:hover{
+    background-color: rgba(226, 21, 21, 0.3);
+}
+a{
+    color: rgba(243, 211, 141, 0.863);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+@media (max-width:600px) {
+    .menu{
+        width: 100%;
+        max-height: 100vh;
+    }
+    .nbar{
+        width: 95%;
+    }
+    ul{
+        width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+    li{
+        width: 40%;
+        display: flex;
+        height: 100px;
+        font-size: 25px;
+    }
+    .menu button{
+        width: 85%;
+    }
+}

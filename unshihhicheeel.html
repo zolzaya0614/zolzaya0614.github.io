@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SONUR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Pacifico', cursive;
+        }
+        body{
+            margin: 0;
+            background-color: black;
+        }
+        .content{
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        
+        .menu{
+            width: 100%;
+            height: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            position: fixed;
+            background-color: rgb(150, 150, 150);
+        }
+        ul{
+            list-style-type: none;
+            width: 80%;
+            height: 100%;
+            padding: 0;
+            display: flex;
+            margin: 0;
+        }
+        li{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(255, 255, 255);
+            font-size: 25px;
+            padding: 10px;
+        }
+        li:hover{
+            background-color: rgb(204, 203, 203);
+            color: white;
+        }
+        .logo {
+           width: 5%;
+           height: 100%;
+           border-radius: 20px;
+           box-shadow:  3px 5px 8px rgb(0, 0, 0) ;
+        }
+        .logo img{
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            box-shadow:  3px 5px 8px rgb(0, 0, 0) ;
+        }
+        .unshih{
+            width: 90%;
+            max-height: 100vh;
+            display: flex;
+            justify-content: center;        
+            align-items: center;
+            gap: 30px;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .qq{
+            width: calc(20% - 30px);
+            height: 500px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.9s;
+            margin: 20px 0;
+        }
+        .qq:hover{
+            transform: scale(1.5);
+            box-shadow: 0px 5px 20px rgba(5, 121, 255, 0.877);
+        }
+        .unshih_hicheel{
+            background-color: black;
+            color: white;
+        }
+        .icon{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            opacity: 0;
+        }
+        ion-icon{
+            width: 50px;
+            height: 50px;
+        }
+
+        @media (max-width:600px) {
+            .content{
+                width: 100%;
+                min-height: 100vh;
+                margin: 10px 0;
+            } 
+            .menu{
+                opacity: 0;
+                position: absolute;
+                width: 0;
+                height: 0;
+            }
+            .icon{
+                opacity: 1;
+                position: static;
+                color: white;
+                transition: 0.9s;
+            }
+            .icon:hover{
+                box-shadow: 0px 5px 20px rgb(235, 172, 172);
+            }
+            .unshih{
+                width: calc(95% - 10px);
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin: 0 auto;
+                gap: 10px;
+            }
+            .qq{
+                width: calc(100% - 10px);
+                height: 400px;
+            } 
+            .qq:hover{
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <ion-icon class="icon" name="menu-outline"></ion-icon>
+        <div class="menu">
+            <a class=" logo " href="./web.html"><img src="./sonur.PNG" alt="sonur"></a>
+            <ul>
+                <li> <a href="taniltsuulaga.html"> Танилцуулага</a></li>
+                <li> <a href="./durem.html"> Дадлага ажил</a></li>
+                <li> <a href="tsagaantolgoi.html"> Цагаан толгой</a></li>
+                <li> <a href="durem.html"> Дүрэм</a></li>
+                <li class="unshih_hicheel"> <a  href="./unshihhicheeel.html"> Унших хичээл</a></li>
+                <li> <a href="tsahimhicheel.html"> Цахим хичээл</a></li>
+            </ul>
+        </div>
+        <div class="unshih">
+            <img class=" qq" src="./aa1.PNG" alt="aa1">
+            <img class=" qq" src="./aa4.PNG" alt="aa4">
+            <img class=" qq" src="./aa6.PNG" alt="aa1">
+            <img class=" qq" src="./aa55.PNG" alt="aa55">
+            <img class=" qq" src="./aa3.PNG" alt="aa3">
+        </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
